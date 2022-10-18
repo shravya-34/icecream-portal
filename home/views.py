@@ -5,6 +5,9 @@ from home.models import Contact
 from django.contrib import messages
 
 # Create your views here.
+def login(request):
+    return render(request, 'login.html')
+
 def index(request):
     context = {
         'variable':"This is sent"
