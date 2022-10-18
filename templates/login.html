@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/login.css">
+    
     <title>Icecream Portal Login</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
             {% csrf_token %}
 
             <label for="first-name">First Name:</label>
-            <input type="text" name="first-name" placeholder="Name" required><br>
+            <input id="name" type="text" name="first-name" placeholder="Name" required><br>
             <label for="last-name">Last Name:</label>
-            <input type="text" name="last-name" placeholder="Last name"><br>
+            <input id="name" type="text" name="last-name" placeholder="Last name"><br>
            
             <div>
                 <label for="email">Email</label>
