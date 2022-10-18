@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icecream.css">
+    <link rel="stylesheet" href="static/footer.css">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> {% block title %}{% endblock title %} | Shravya IceCreams</title>
@@ -9,7 +16,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Shravya IceCream</a>
+          <a class="navbar-brand" href="#">IceCream Parlour</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -23,13 +30,15 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
+                  Our Products
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/services">Icecream</a></li>
-                  <li><a class="dropdown-item" href="#">Softy</a></li>
+                  <li><a class="dropdown-item" href="/services">Bars</a></li>
+                  <li><a class="dropdown-item" href="#">Scoops</a></li>
+                  <li><a class="dropdown-item" href="#">Cone</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Family Pack</a></li>
+                  <li><a class="dropdown-item" href="#">Premium Tubs</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -56,5 +65,45 @@
       {% block body %}{% endblock body %}
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   
+
+<footer class="foot">
+  <div class="column">
+      <h3>Company</h3>
+      <ul>
+          <li>About Us</li>
+          <li>Our Services</li>
+          <li>Privacy Policy</li>
+          <li>Affilate Program</li>
+      </ul>
+  </div>
+  <div class="column">
+      <h3>Get Help</h3>
+      <ul>
+          <li>About Us</li>
+          <li>Our Services</li>
+          <li>Privacy Policy</li>
+          <li>Affilate Program</li>
+      </ul>
+  </div>
+  <div class="column">
+      <h3>Company</h3>
+      <ul>
+          <li>About Us</li>
+          <li>Our Services</li>
+          <li>Privacy Policy</li>
+          <li>Affilate Program</li>
+      </ul>
+  </div>
+  <div class="column" >
+      <h3>Follow Us</h3>
+      <ul class="row">
+          <li><a href=""><img class="img" src="satic/f1.png"></a></li>
+          <li><a href=""><img class="img" src="static/t1.png"></a></li>
+          <li><a href=""><img class="img" src="static/i1.png"></a></li>
+          <li><a href=""><img class="img" src="static/l1.png"></a></li>
+      </ul>
+  </div>
+</footer>
+
     </body>
 </html>
