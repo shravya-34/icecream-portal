@@ -1,0 +1,40 @@
+footer{
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+.foot{
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.column{
+    width: 25%;
+}
+.foot h3{
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+ul{
+    list-style: none;
+}
+li{
+    transition: all 0.5s;
+    padding: 3px 0px 3px 0px;
+}
+li:hover{
+    padding: 10px;
+}
+
+@media(max-width:750px){
+    .column{
+        width: 50%;
+    }
+}
+
+.img{
+    width: 25px;
+    padding-right: 10px;
+}
+
