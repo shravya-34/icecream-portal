@@ -9,17 +9,30 @@
     <title>Icecream Portal Login</title>
 </head>
 <body>
+    <script>
+        function validate() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+              alert("Name must be filled out");
+              return false;
+            }
+            else if (x!="Hrishikesh"){
+                alert("Not Authorized User")
+            }
+          }
+        </script>
+
     <h1>ICECREAM PARLOUR LOGIN</h1>
 
     <div>
-        <form action="/index" method="post">
+        <form name ="myForm" action="/index" onsubmit="return validate()" method="post">
 
             {% csrf_token %}
 
             <label for="first-name">First Name:</label>
-            <input id="name" type="text" name="first-name" placeholder="Name" required><br>
+            <input id="name" type="text" name="fname" placeholder="Name" required><br>
             <label for="last-name">Last Name:</label>
-            <input id="name" type="text" name="last-name" placeholder="Last name"><br>
+            <input id="name" type="text" name="lname" placeholder="Last name"><br>
            
             <div>
                 <label for="email">Email</label>
